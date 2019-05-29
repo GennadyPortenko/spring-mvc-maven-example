@@ -7,7 +7,8 @@
 
     <servlet>
         <servlet-name>Hello</servlet-name>
-        <servlet-class>gpk.springmvc.HelloServlet</servlet-class>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
     </servlet>
 
     <servlet-mapping>
