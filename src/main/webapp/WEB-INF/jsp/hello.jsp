@@ -5,5 +5,6 @@
   </head>
   <body>
     <h2>${message}</h2>
+    <h3>${my_bean}</h3>
   </body>
 </html
