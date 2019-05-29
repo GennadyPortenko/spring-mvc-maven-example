@@ -1,12 +1,14 @@
 package gpk.springmvc.controller;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class HelloController {
     @GetMapping("/hello")
-    String hello() {
-        return "Hello from @RestController!";
+    String hello(ModelMap model) {
+        model.addAttribute("message", "Hello from @Controller with ModelMap!");
+        return "hello";
     }
 }
